@@ -3,8 +3,8 @@ const path = require('path');
 
 const app = express();
 
-app.use('/build', (req, res) => {
-	res.sendFile(path.join(__dirname, '../build/bundle.js'));
+app.use('/dist', (req, res) => {
+	res.sendFile(path.join(__dirname, '../dist/bundle.js'));
 });
 
 app.get('/', (req, res) => {

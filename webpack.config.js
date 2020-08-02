@@ -21,13 +21,13 @@ module.exports = {
         extensions: ['*', '.js', '.jsx'],
     },
     output: {
-        path: path.join(__dirname, 'build'),
+        path: path.join(__dirname, 'dist'),
         filename: 'bundle.js',
     },
     devServer: {
         contentBase: path.join(__dirname, 'src'),
         port: 8080,
-        publicPath: '/build',
+        publicPath: '/dist',
         hot: true,
         historyApiFallback: true,
     },
