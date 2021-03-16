@@ -2,11 +2,11 @@
   "name": "ts-react-template",
   "version": "1.0.0",
   "description": "This is a template for quickly prototyping React apps with Typescript.",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack",
-    "start": "node server/server.js"
+    "build": "rm -rf dist && webpack --config webpack/webpack.prod.js --mode production",
+    "dev": "webpack serve --open --config webpack/webpack.dev.js && yarn server",
+    "server": "node server/server.js",
   },
   "repository": {
     "type": "git",
