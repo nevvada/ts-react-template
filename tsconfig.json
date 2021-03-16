@@ -2,12 +2,20 @@
 	"compilerOptions": {
 		"allowJs": true,
 		"allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
 		"jsx": "react",
+    "lib": ["dom", "esnext"],
 		"noImplicitAny": true,
-		"module": "es6",
+		"module": "esnext",
+    "moduleResolution": "node",
 		"outDir": "./dist/",
+    "paths": {
+      "test-utils": ["./utils/test-utils"]
+    },
 		"sourceMap": true,
-		"target": "es5"
+		"target": "es5",
+    "types": ["node"]
 	},
 	"include": ["src/**/*"],
 	"exclude": ["node_modules"]
